@@ -11,7 +11,19 @@ module.exports = {
     "prettier"
   ],
   settings: { react: { version: "detect" } },
+  ignorePatterns: [
+    "node_modules/",
+    "build/",
+    "dist/",
+    "public/",
+    "*.css",
+    "*.json",
+    "package.json"
+  ],
   rules: {
-    "react/prop-types": "off"
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": "off",
+    "react/display-name": "off",
+    "no-empty": ["error", { "allowEmptyCatch": true }]
   }
 };

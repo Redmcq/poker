@@ -1,0 +1,32 @@
+.hdr {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: var(--card);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.hdr .brand {
+  font-weight: 700;
+  color: var(--fg);
+}
+.hdr-nav {
+  display: flex;
+  gap: 14px;
+}
+.hdr-nav a {
+  color: var(--muted);
+}
+.hdr-nav a.active {
+  color: var(--accent);
+  font-weight: 600;
+}
+#kbd {
+  opacity: 0.7;
+  border: 1px solid #2a2f3a;
+  border-radius: 6px;
+  padding: 2px 6px;
+  margin-left: 8px;
+}

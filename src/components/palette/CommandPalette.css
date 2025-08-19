@@ -1,0 +1,45 @@
+.palette {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: flex-start;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(2px);
+}
+.palette.open {
+  display: flex;
+}
+.panel {
+  margin-top: 10vh;
+  width: min(700px, 92vw);
+  background: var(--card);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
+.panel input {
+  width: 100%;
+  padding: 14px 16px;
+  border: 0;
+  outline: 0;
+  background: #0f1320;
+  color: var(--fg);
+  font-size: 16px;
+}
+.panel ul {
+  list-style: none;
+  margin: 0;
+  padding: 8px;
+}
+.panel li {
+  padding: 10px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.panel li:hover {
+  background: #0f1422;
+}
+.muted {
+  color: var(--muted);
+}

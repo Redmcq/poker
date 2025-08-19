@@ -1,0 +1,7 @@
+﻿node_modules/
+build/
+dist/
+public/
+*.css
+*.json
+package.json
